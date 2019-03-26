@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
-<body class="is-preload" onload="startup()">
+<body class="is-preload">
 
 	<!-- Header -->
 	<div id="header">
@@ -39,7 +39,6 @@
 					<li><a href="#transport" id="transport-link"><span class="fas fa-car">Transport</span></a></li>
 					<li><a href="#accommodation" id="accommodation-link"><span class="fas fa-hotel">Accommodation</span></a></li>
 					<li><a href="#menu" id="menu-link"><span class="fas fa-utensils">Menu</span></a></li>
-					<li><a href="#rsvp" id="rsvp-link"><span class="fas fa-envelope">RSVP</span></a></li>
 				</ul>
 			</nav>
 
@@ -164,126 +163,6 @@
 						</section>
 					</div>
 		</section>
-
-		<!-- RSVP -->
-		<section id="rsvp" class="six">
-			<div class="container">
-
-				<body>
-					<h2 class="content-head is-center">RSVP</h2>
-					<aside>
-						<p>We hope to see you there! Please let us know if you're attending by 17th February using the form below. 
-							Fill in the number of guests who can make it, dinner choices and any dietary requirements.
-						</p>
-					</aside>
-
-					<form class="gform pure-form" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbyPVxKtTZ1MGgmgCyp2fIO1A6ffFEmBBb48mMvf/exec">
-						<!-- change the form action to your script url -->
-
-						<div class="	">
-							<fieldset>
-								<label for="attendees"><strong>Number of guests (not including children)</strong></label>
-								<div>
-									<select id="attendees" name="attendees" onchange="chooseNumberOfPeople(this)">
-										<option value="0" selected="selected">0</option>
-										<option value="1" name="1" onchange="showMe('personOne')">1</option>
-										<option value="2">2</option>
-									</select>
-								</div>
-							</fieldset>
-
-							<div id="personOne" style="display:none">
-								<fieldset>
-									<label for="firstPersonName"><strong>Name</strong></label>
-									<input id="firstPersonName" name="firstPersonName" />
-								</fieldset>
-
-								<fieldset>
-									<label for="firstPersonStarter"><strong>Starter</strong></label>
-									<div>
-										<label>Garlic mushroom bruschetta with pesto <input type="radio" id="mushroomstarter1" name="firstPersonStarter" value="garlicMushroom"></label>
-									</div>
-									<div>
-										<label>Goats cheese, spinach & tomato tart <input type="radio" name="firstPersonStarter" value="tart" id="tartstarter1"></label>
-									</div>
-								</fieldset>
-
-								<fieldset>
-									<label for="firstPersonMain"><strong>Main</strong></label>
-
-									<div>
-										<label>Portobello mushroom <input type="radio" name="firstPersonMain" value="portobelloMushroom" id="mushroommain1" checked></label>
-									</div>
-									<div>
-										<label>Confit duck <input type="radio" name="firstPersonMain" value="duck" id="duckmain1"></label>
-									</div>
-									</fieldset>
-							</div>
-
-							<div id="personTwo" style="display:none">
-								<fieldset>
-									<label for="secondPersonName"><strong>Name</strong></label>
-									<input id="secondPersonName" name="secondPersonName" />
-								</fieldset>
-
-								<fieldset>
-									<label for="secondPersonStarter"><strong>Starter</strong></label>
-									<div>
-										<label>Garlic mushroom bruschetta with pesto <input type="radio" name="secondPersonStarter" value="garlicMushroom" id="mushroomstarter2" checked></label>
-									</div>
-									<div>
-										<label>Goats cheese, spinach & tomato tart <input type="radio" name="secondPersonStarter" value="tart" id="tartstarter2"></label>
-									</div>
-								</fieldset>
-
-								<fieldset>
-									<label for="secondPersonMain"><strong>Main</strong></label>
-
-									<div>
-										<label>Portobello mushroom <input type="radio" name="secondPersonMain" value="portobelloMushroom" id="mushroommain2" checked></label>
-									</div>
-									<div>
-										<label>Confit duck <input type="radio" name="secondPersonMain" value="duck" id="duckmain2"></label>
-									</div>
-								</fieldset>
-							</div>
-
-							<div id="bringingChildren" style="display:none">
-								<fieldset>
-									<label for="children"><strong>Will you be bringing children?</strong></label>
-
-									<div>
-										<label>No <input type="radio" name="childen" value="No" id="childrenNo" checked></label>
-									</div>
-									<div>
-										<label>Yes <input type="radio" name="childen" value="Yes" id="childrenYes"></label>	
-									</div>
-								</fieldset>
-							</div>
-
-							<fieldset>
-								<label for="message"><strong>Message</strong></label>
-								<textarea id="message" name="message" rows="3" placeholder="Let us know of any dietary requirements etc."></textarea>
-							</fieldset>
-
-							<button class="button-success pure-button button-xlarge">
-								<i class="fa fa-paper-plane"></i>&nbsp;Send
-							</button>
-						</div>
-
-						<!-- Customise the Thankyou Message People See when they submit the form: -->
-						<div class="thankyou_message" style="display:none;">
-							<h2>Thanks for RSVPing!</h2>
-						</div>
-
-					</form>
-					<!-- END -->
-
-				</body>
-
-			</div>
-		</section>
-
 	</div>
 
 	<!-- Footer -->
@@ -291,7 +170,6 @@
 
 		<!-- Copyright -->
 		<ul class="copyright">
-			<li>&copy; Untitled. All rights reserved.</li>
 			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 		</ul>
 
@@ -305,8 +183,6 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script src="form-submission-handler.js"></script>
-	<script src="visibility.js"></script>
 
 </body>
 
